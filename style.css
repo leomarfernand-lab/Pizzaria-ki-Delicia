@@ -1,5 +1,5 @@
 
-/*  RESET  */
+/*  RESET margens da página  */
 * {
     margin: 0;
     padding: 0;
@@ -136,7 +136,7 @@ h2 {
     align-items: center;
     justify-content: center;
 
-    background-image: url("./assets/pizza.jpg");
+    background-image: url("../pizza.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
