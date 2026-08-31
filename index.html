@@ -1,0 +1,304 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Pizzaria Ki Delicia - Pizza quentinha, saborosa e preparada com ingredientes frescos.">
+    <title>Pizzaria Ki Delicia- Sua pizza quentinha com o melhor sabor.
+    </title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+     <script src="script.js" defer></script>
+
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <img src="assets/img/logo.jpg" alt="Logo Ki Delicia" />
+                <span>Pizzaria Ki Delicia</span>
+            </div>
+            <nav class="nav" aria-label="Menu principal">
+                <a href="#inicio">Início</a>
+                <a href="#beneficios">Benefícios</a>
+                <a href="#sabores">Sabores</a>
+                <a href="#depoimentos">Depoimentos</a>
+                <a href="#formulario">Formulário</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+
+        <section id="inicio" class="hero">
+            <div class="hero-overlay"></div>
+
+            <div class="container hero-content">
+                <h1>A pizza quentinha que chega até você com todo o sabor da Pizzaria Ki-
+                    delicia.</h1>
+
+
+
+                <a href="#formulario" class="btn btn-primary">
+                    Peça sua pizza
+                </a>
+            </div>
+        </section>
+
+        <section id="beneficios" class="section beneficios">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Por que escolher nossa pizzaria?</h2>
+                    <p>
+                        <br>
+                    <p><br></p>
+                    <p>
+                        Ingredientes selecionados, preparo artesanal e muito sabor
+                        para transformar seu pedido em uma experiência especial.
+                    </p>
+                    "Qualidade, rapidez e sabor em todos os nossos pedidos.''
+                    </p>
+                    <br>
+                    <br>
+                </div>
+
+                <div class="cards">
+
+                    <article class="card">
+                        <div class="card-icon">
+                            <i class="fa-solid fa-leaf"></i>
+                        </div>
+
+                        <h3>Ingredientes frescos</h3>
+
+                        <p>
+                            Selecionamos ingredientes frescos e de qualidade
+                            para garantir uma pizza saborosa e preparada com carinho.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <div class="card-icon">
+                            <i class="fa-solid fa-motorcycle"></i>
+                        </div>
+                        <h3>Entrega rápida</h3>
+
+                        <p>
+                            Preparamos seu pedido com agilidade para que sua
+                            pizza chegue quentinha até você.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <div class="card-icon">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+
+                        <h3>Sabor inigualável</h3>
+
+                        <p>
+                            Receitas preparadas com dedicação para proporcionar
+                            uma experiência deliciosa em cada pedaço.
+                        </p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="sabores" class="section sabores">
+            <div class="container">
+
+                <div class="section-title">
+                    <h2>Nossos Sabores</h2>
+                    <p>
+                        Escolha seu sabor favorito e aproveite uma pizza deliciosa.
+                    </p>
+                </div>
+
+                <div class="sabores-list">
+                    <button type="button" class="sabor">Calabresa</button>
+                    <button type="button" class="sabor">Margherita</button>
+                    <button type="button" class="sabor">Frango com Catupiry</button>
+                    <button type="button" class="sabor">Portuguesa</button>
+                    <button type="button" class="sabor">Vegetariana</button>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="depoimentos" id="depoimentos">
+            <br>
+            <h2>O que nossos clientes dizem</h2> <br><br>
+            <div class="container-depoimentos"></div>
+
+            <div class="depoimento ativo">
+
+                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="João" class="cliente-foto">
+                <p>
+                    <br><strong> "Entregam super rápido, recomendo demais!
+                        A pizza chegou quentinha e estava deliciosa."</strong>
+                </p>
+            </div>
+            <div class="depoimento">
+                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Maria" class="cliente-foto">
+                <p>
+                    <br><strong> "Sabor inigualável! A pizza estava perfeita, virei fã."</strong>
+                </p>
+            </div>
+            <div class="depoimento">
+
+                <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Ana" class="cliente-foto">
+                <p>
+
+                    <br><strong> "Entrega super rápida,recomendo demais!"</strong>
+                </p>
+            </div>
+
+            <div class="depoimento-botoes">
+                <button id="depo-anterior" type="button">Anterior</button>
+                <button id="depo-proximo" type="button">Próximo</button>
+            </div>
+            </div>
+        </section>
+
+        <section id="formulario" class="section formulario-section">
+            <div class="container">
+
+                <div class="section-title">
+                    <h2>Peça já a sua pizza!</h2>
+                    <h4>
+                        <p>Por favor preencha os dados abaixo para realizar seu pedido. </p>
+                    </h4>
+                </div>
+
+                <form id="form-pedido" action="obrigado.html" method="post" novalidate target="_blank">
+                    <div id="mensagens-erro"></div>
+
+
+                    <div class="form-group">
+                        <label for="nome">Nome completo</label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telefone">Telefone</label>
+                        <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="endereco">Endereço de entrega</label>
+                        <input type="text" id="endereco" name="endereco" placeholder="Digite seu endereço" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="sabor">Escolha do sabor</label>
+
+                        <select id="sabor" name="sabor" required>
+                            <option value="" selected disabled>
+                                Selecione um sabor
+                            </option>
+                            <option value="calabresa">Calabresa</option>
+                            <option value="margherita">Margherita</option>
+                            <option value="frango-catupiry">
+                                Frango com Catupiry
+                            </option>
+                            <option value="portuguesa">Portuguesa</option>
+                            <option value="vegetariana">Vegetariana</option>
+                        </select>
+                    </div>
+                    <fieldset class="form-group">
+                        <legend>Adicionais</legend>
+
+                        <div class="opcoes">
+                            <label>
+                                <input type="checkbox" name="adicionais" value="borda-recheada">
+                                Borda recheada
+                            </label>
+
+                            <label>
+                                <input type="checkbox" name="adicionais" value="bebida">
+                                Bebida
+                            </label>
+                        </div>
+                    </fieldset>
+                    <fieldset class="form-group">
+                        <legend>Forma de pagamento</legend>
+
+                        <div class="opcoes">
+                            <label>
+                                <input type="radio" name="pagamento" value="dinheiro" required>
+                                Dinheiro
+                            </label>
+
+                            <label>
+                                <input type="radio" name="pagamento" value="cartao" required>
+                                Cartão
+                            </label>
+
+                            <label>
+                                <input type="radio" name="pagamento" value="pix" required>
+                                Pix
+                            </label>
+                        </div>
+                        <br> <br>
+                        <button type="submit" class="bt btn-primary btn-submit">
+                            Enviar Pedido
+                        </button>
+                        <br><br>
+                     <a href="#inicio" >
+                   <strong> Clique aqui para voltar ao início</strong></a>  
+
+
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+
+            <h2>Pizzaria Ki Delicia </h2>
+
+            <p>
+                Pizza feita com carinho para deixar seus momentos mais felizes e saborosos.
+            </p>
+
+            <div class="social-links">
+
+                <a href="#" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+
+                <a href="#" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#" aria-label="WhatsApp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+            </div>
+
+            <p class="copyright">
+                &copy; 2026 Pizzaria Ki Delicia."  Leomar da Silva Fernandes" Todos os direitos reservados.
+            </p>
+
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
